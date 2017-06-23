@@ -18,11 +18,13 @@ cordova-plugin-mfp 8.0.2017060910 "IBM MobileFirst Platform Foundation"
 **HOW TO FIX THIS**
 
 **Step 1.** 
+
 Add The Embedded framwork (Xcode => Targets => Build phases => Embedded Binaries).
 
 **Step 2.**
-Add The Run Script (Xcode => Targets => Build phases => Use + button to add Run Script Phases).
-        Set it to use /bin/sh and enter the following script:
+
+Add The Run Script (Xcode => Targets => Build phases => Use + button to add Run Script Phases).Set it to use /bin/sh and enter the following script:
+        
         ```
         APP_PATH="${TARGET_BUILD_DIR}/${WRAPPER_NAME}"
 
